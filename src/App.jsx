@@ -22,7 +22,7 @@ function App() {
       <div className="dark:bg-black dark:text-white min-h-screen">
         <button
           onClick={toggletheme}
-          className="absolute right-5 top-24 text-xl rounded-full text-black bg-white dark:bg-black dark:text-white"
+          className="absolute right-5 md:top-24 md:text-xl top-56 text-sm rounded-full text-black bg-white  dark:bg-black dark:text-white"
         >
           <DarkModeToggle
             onChange={setIsDarkMode}
