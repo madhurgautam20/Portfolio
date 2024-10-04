@@ -64,7 +64,7 @@ const Navbar = () => {
               onClick={() => {
                 setMenu(!menu);
               }}
-              className="md:hidden bg-white"
+              className="md:hidden bg-white dark:bg-black dark:text-white"
             >
               {menu ? <ImCross size={20} /> : <MdMenu size={20} />}
             </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
         {/* Mobile Navbar*/}
         {menu && (
-          <div className="bg-white">
+          <div className="bg-white dark:bg-black">
             <ul className="md:hidden flex flex-col items-center justify-center h-screen space-y-3 text-xl ">
               {navItems.map(({ id, text }) => (
                 <li
@@ -80,6 +80,7 @@ const Navbar = () => {
                   key={id}
                 >
                   <Link
+                  className=" dark:text-white"
                     onClick={() => {
                       setMenu(!menu);
                     }}

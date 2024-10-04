@@ -11,8 +11,8 @@ import pic from "../../public/pic.png";
 
 function Home() {
   return (
-    <>
-      <div name="Home" className="max-w-screen-2xl dark:bg-black container mx-auto px-4 md:px-20 my-16">
+    <div name="Home">
+      <div  className="max-w-screen-2xl dark:bg-black container mx-auto px-4 md:px-20 my-16">
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
             <span className="text-xl">Welcome to my Feed!</span>
@@ -79,7 +79,7 @@ function Home() {
         </div>
       </div>
       <hr />
-    </>
+    </div>
   );
 }
 
