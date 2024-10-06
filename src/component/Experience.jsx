@@ -1,7 +1,7 @@
 import React from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
-import mongoDB from "../../public/mongodb.jpg";
+import mongoDB from "../../public/mongodb.jpeg";
 import javascript from "../../public/javascript.png";
 import reactjs from "../../public/reactjs.png";
 import nodejs from "../../public/node.png";
@@ -55,7 +55,7 @@ const Experience = () => {
         <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-5 gap-5 my-5">
           {cardItem.map(({ id, logo, name }) => (
             <div
-              className="flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px] p-1 cursor-pointer hover:scale-105 duration-300"
+              className="flex flex-col items-center justify-center  md:w-[200px] md:h-[200px] p-1 cursor-pointer hover:scale-105 duration-300"
               key={id}
             >
               <img

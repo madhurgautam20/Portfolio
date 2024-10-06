@@ -42,23 +42,23 @@ function Home() {
             <div className="flex flex-col item-center md:flex-row justify-between space-y-6 md:space-y-0 ">
               <div className=" space-y-2">
                 <h1 className="font-bold text-xl">Available on:</h1>
-                <ul className="flex space-x-4">
+                <ul className="flex space-x-4 ">
                   <li>
                     <a href="https://www.linkedin.com/"  target="_blank">
                    
-                    <FaLinkedin className="text-2xl cursor-pointer" /></a>
+                    <FaLinkedin className="text-3xl cursor-pointer" /></a>
                   </li>
                   <li>
                     <a href="https://www.instagram.com/" target="_blank">
-                    <FaInstagramSquare className="text-2xl cursor-pointer" /></a>
+                    <FaInstagramSquare className="text-3xl cursor-pointer" /></a>
                   </li>
                   <li>
                     <a href="https://telegram.org/" target="_blank">
-                    <FaTelegramPlane className="text-2xl cursor-pointer" /></a>
+                    <FaTelegramPlane className="text-3xl cursor-pointer" /></a>
                   </li>
                   <li>
                     <a href="https://x.com/" target="_blank">
-                    <RiTwitterXLine className="text-2xl cursor-pointer" /></a>
+                    <RiTwitterXLine className="text-3xl cursor-pointer" /></a>
                   </li>
                 </ul>
               </div>
