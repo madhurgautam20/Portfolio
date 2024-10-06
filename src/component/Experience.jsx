@@ -5,7 +5,7 @@ import mongoDB from "../../public/mongodb.jpg";
 import javascript from "../../public/javascript.png";
 import reactjs from "../../public/reactjs.png";
 import nodejs from "../../public/node.png";
-import oracle from "../../public/oracle.png";
+import c from "../../public/c.png";
 
 const Experience = () => {
   const cardItem = [
@@ -41,8 +41,8 @@ const Experience = () => {
     },
     {
       id: 7,
-      logo: oracle,
-      name: "Oracle",
+      logo: c,
+      name: "C",
     }
   ];
 
