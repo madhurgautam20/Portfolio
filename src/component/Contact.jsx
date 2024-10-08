@@ -17,7 +17,7 @@ const Contact = () => {
       message: data.message,
     };
     try {
-      await axios.post("https://getform.io/f/bjjezmmb", userInfo);
+      await axios.post("http://localhost:8080/contact", userInfo);
       toast.success("Your message has been sent");
     } catch (error) {
       console.log(error);
@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <div name="Contact">
-      <div className="max-w-screen-2xl  dark:text-white dark:bg-black container mx-auto px-4 md:px-20 my-16">
+      <div className="max-w-screen-2xl dark:text-white dark:bg-black container mx-auto px-4 md:px-20 my-16">
         <h1 className="text-3xl font-bold mb-3">Contact me</h1>
         <span>Please fill out the form below to contact me</span>
         <div className="flex flex-col items-center justify-center mt-20">
@@ -35,13 +35,9 @@ const Contact = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="bg-slate-200 w-90 px-8 py-6 rounded-xl"
           >
-            <h1 className="text-xl font-semibold  dark:text-black  mb-4">
-              Send your message
-            </h1>
+            <h1 className="text-xl font-semibold dark:text-black mb-4">Send your message</h1>
             <div className="flex flex-col mb-4">
-              <label className="block text-gray-700" htmlFor="name">
-                Full Name
-              </label>
+              <label className="block text-gray-700" htmlFor="name">Full Name</label>
               <input
                 id="name"
                 className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-black"
@@ -53,9 +49,7 @@ const Contact = () => {
               {errors.name && <span>This field is required</span>}
             </div>
             <div className="flex flex-col mb-4">
-              <label className="block text-gray-700" htmlFor="email">
-                Email
-              </label>
+              <label className="block text-gray-700" htmlFor="email">Email</label>
               <input
                 {...register("email", { required: true })}
                 id="email"
@@ -67,9 +61,7 @@ const Contact = () => {
               {errors.email && <span>This field is required</span>}
             </div>
             <div className="flex flex-col mb-4">
-              <label className="block text-gray-700" htmlFor="message">
-                Message
-              </label>
+              <label className="block text-gray-700" htmlFor="message">Message</label>
               <textarea
                 {...register("message", { required: true })}
                 id="message"
