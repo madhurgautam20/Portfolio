@@ -10,26 +10,25 @@ import { Toaster } from "react-hot-toast";
 import DarkModeToggle from "react-dark-mode-toggle";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState();
 
   function toggletheme() {
     document.documentElement.classList.toggle("dark");
   }
-  const label = { inputProps: { "aria-label": "Switch demo" } };
 
   return (
     <>
       <div className="dark:bg-black dark:text-white min-h-screen">
-        <button
+        <div
           onClick={toggletheme}
-          className="absolute right-5 md:top-24 md:text-xl top-60 text-sm rounded-full text-black bg-white  dark:bg-black dark:text-white"
+          className="absolute right-5 md:top-24 md:text-xl top-60 text-sm rounded-full text-black bg-white dark:bg-black dark:text-white cursor-pointer"
         >
           <DarkModeToggle
             onChange={setIsDarkMode}
             checked={isDarkMode}
             size={60}
           />
-        </button>
+        </div>
         <Navbar />
         <Home />
         <About />
