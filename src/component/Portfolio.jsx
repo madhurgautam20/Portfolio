@@ -15,8 +15,8 @@ const Portfolio = () => {
     {
       id: 2,
       logo: project2,
-      name: "soon...",
-      sourceLink: "https://github.com/yourusername/react-project", // Add your specific link
+      name: "Resume Builder",
+      sourceLink: "https://github.com/madhurgautam20/resume.git", // Add your specific link
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name="Portfolio">
+    <div name="Projects">
     <div  className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 mt-10">
       <div>
         <h1 className="text-3xl font-bold mb-5">Portfolio</h1>
@@ -53,7 +53,7 @@ const Portfolio = () => {
               <div className="text-center">
                 <div className="px-2 font-bold text-xl mb-2">{name}</div>
                 <p className="px-2 text-gray-700">
-                  View Source Code on GitHub and you can check this project's videos on YouTube.
+                  View Source Code on GitHub.
                 </p>
               </div>
               <div className="flex justify-around px-6 py-4 space-x-4">
